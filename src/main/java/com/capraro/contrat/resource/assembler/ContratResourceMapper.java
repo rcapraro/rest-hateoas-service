@@ -1,9 +1,9 @@
-package com.capraro.contrat.resources.assembler;
+package com.capraro.contrat.resource.assembler;
 
 import com.capraro.contrat.model.Assure;
 import com.capraro.contrat.model.Contrat;
 import com.capraro.contrat.model.Souscripteur;
-import com.capraro.contrat.resources.ContratResource;
+import com.capraro.contrat.resource.ContratResource;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.mapstruct.Mappings;

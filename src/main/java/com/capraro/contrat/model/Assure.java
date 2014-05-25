@@ -1,5 +1,7 @@
 package com.capraro.contrat.model;
 
+import java.util.Date;
+
 /**
  * Created by Richard on 23/05/2014.
  */
@@ -7,10 +9,12 @@ public class Assure {
 
     private Long id;
     private String nom;
+    private Date dateNaissance;
 
-    public Assure(Long id, String nom) {
+    public Assure(Long id, String nom, Date dateNaissance) {
         this.id = id;
         this.nom = nom;
+        this.dateNaissance = dateNaissance;
     }
 
     public Long getId() {
@@ -27,5 +31,13 @@ public class Assure {
 
     public void setNom(String nom) {
         this.nom = nom;
+    }
+
+    public Date getDateNaissance() {
+        return dateNaissance;
+    }
+
+    public void setDateNaissance(Date dateNaissance) {
+        this.dateNaissance = dateNaissance;
     }
 }

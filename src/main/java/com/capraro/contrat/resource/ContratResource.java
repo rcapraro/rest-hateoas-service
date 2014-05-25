@@ -1,4 +1,4 @@
-package com.capraro.contrat.resources;
+package com.capraro.contrat.resource;
 
 import org.springframework.hateoas.Link;
 import org.springframework.hateoas.ResourceSupport;
