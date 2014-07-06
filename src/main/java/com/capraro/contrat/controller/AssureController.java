@@ -23,7 +23,6 @@ public class AssureController {
     AssureRepository assureRepository;
 
     @RequestMapping(method = RequestMethod.GET)
-    @ResponseBody
     public List<AssureResource> assures() {
         List<Assure> assures = assureRepository.getAssures();
         List<AssureResource> resources = assureResourceAssembler.toResources(assures);
@@ -31,7 +30,6 @@ public class AssureController {
     }
 
     @RequestMapping(value = "/{id}", method = RequestMethod.GET)
-    @ResponseBody
     public AssureResource assure(@PathVariable("id") Long id) {
         Assure assure = assureRepository.getAssureById(id);
         AssureResource resource = assureResourceAssembler.toResource(assure);

@@ -22,7 +22,6 @@ public class ContratController {
     ContratRepository contratRepository;
 
     @RequestMapping(method = RequestMethod.GET)
-    @ResponseBody
     public List<ContratResource> contrats() {
         List<Contrat> contrats = contratRepository.getAllContrats();
         List<ContratResource> resources = contratResourceAssembler.toResources(contrats);
@@ -30,7 +29,6 @@ public class ContratController {
     }
 
     @RequestMapping(value = "/{id}", method = RequestMethod.GET)
-    @ResponseBody
     public ContratResource contrat(@PathVariable("id") Long id) {
         Contrat contrat = contratRepository.getContratById(id);
         ContratResource resource = contratResourceAssembler.toResource(contrat);
